@@ -1,4 +1,4 @@
-package ch.wiss.quizbackend;
+package ch.wiss.quizbackend.model;
 import java.util.List;
 
 public class Question {
