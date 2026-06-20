@@ -1,14 +1,25 @@
 package ch.wiss.quizbackend.model;
+
+import jakarta.persistence.*;
+
 import java.util.List;
 
+@Entity
+@Table(name = "questions")
 public class Question {
 
+    @Id
     private String id;
     private String text;
     private String category;
     private String difficulty;
+    @ElementCollection(fetch = FetchType.EAGER)
     private List<String> answers;
     private String correctAnswer;
+
+    public Question() {
+
+    }
 
 
     public Question(String id, String text, String category, String difficulty, List<String> answers, String correctAnswer) {
