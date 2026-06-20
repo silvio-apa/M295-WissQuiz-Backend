@@ -23,4 +23,17 @@ public class QuestionService {
         return questionRepository.findById(id).orElse(null);
     }
 
+    public Question createQuestion(Question question) {
+        return questionRepository.save(question);
+    }
+
+    public Question updateQuestion(String id, Question question) {
+        question.setId(id);
+        return questionRepository.save(question);
+    }
+
+    public void deleteQuestion(String id) {
+        questionRepository.deleteById(id);
+    }
+
 }
