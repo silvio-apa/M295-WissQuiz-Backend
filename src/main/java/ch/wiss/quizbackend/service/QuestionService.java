@@ -3,6 +3,9 @@ package ch.wiss.quizbackend.service;
 import  ch.wiss.quizbackend.model.Question;
 import  ch.wiss.quizbackend.repository.QuestionRepository;
 import  org.springframework.stereotype.Service;
+import ch.wiss.quizbackend.dto.QuestionFormDTO;
+import ch.wiss.quizbackend.mapper.QuestionMapper;
+import java.util.UUID;
 
 import java.util.List;
 
@@ -23,12 +26,14 @@ public class QuestionService {
         return questionRepository.findById(id).orElse(null);
     }
 
-    public Question createQuestion(Question question) {
+    public Question createQuestion(QuestionFormDTO form) {
+        String id = UUID.randomUUID().toString();
+        Question question = QuestionMapper.toEntity(id, form);
         return questionRepository.save(question);
     }
 
-    public Question updateQuestion(String id, Question question) {
-        question.setId(id);
+    public Question updateQuestion(String id, QuestionFormDTO form) {
+        Question question = QuestionMapper.toEntity(id, form);
         return questionRepository.save(question);
     }
 
