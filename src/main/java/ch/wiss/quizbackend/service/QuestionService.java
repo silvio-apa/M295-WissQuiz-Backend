@@ -1,6 +1,7 @@
 package ch.wiss.quizbackend.service;
 
 import ch.wiss.quizbackend.dto.QuestionFormDTO;
+import ch.wiss.quizbackend.exception.QuestionNotFoundException;
 import ch.wiss.quizbackend.mapper.QuestionMapper;
 import ch.wiss.quizbackend.model.Question;
 import ch.wiss.quizbackend.repository.QuestionRepository;
@@ -22,7 +23,8 @@ public class QuestionService {
     }
 
     public Question getQuestionById(String id) {
-        return questionRepository.findById(id).orElse(null);
+        return questionRepository.findById(id)
+                .orElseThrow(() -> new QuestionNotFoundException(id));
     }
 
     public Question createQuestion(QuestionFormDTO form) {
@@ -32,11 +34,18 @@ public class QuestionService {
     }
 
     public Question updateQuestion(String id, QuestionFormDTO form) {
+        if (!questionRepository.existsById(id)) {
+            throw new QuestionNotFoundException(id);
+        }
+
         Question question = QuestionMapper.toEntity(id, form);
         return questionRepository.save(question);
     }
 
     public void deleteQuestion(String id) {
+        if (!questionRepository.existsById(id)) {
+            throw new QuestionNotFoundException(id);
+        }
         questionRepository.deleteById(id);
     }
 
