@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "text": "Wie viele Spieler stehen beim Fussball pro Team auf dem Feld?",
+    "text": "Wie viele Spieler stehen pro Mannschaft beim Fussball gleichzeitig auf dem Platz?",
     "category": "Sport",
     "difficulty": "leicht",
     "answers": ["9", "10", "11", "12"],
@@ -9,14 +9,22 @@
   },
   {
     "id": "2",
-    "text": "In welchem Sport gibt es einen Slam Dunk?",
+    "text": "In welcher Sportart wird der Stanley Cup vergeben?",
     "category": "Sport",
-    "difficulty": "leicht",
-    "answers": ["Basketball", "Volleyball", "Tennis", "Handball"],
-    "correctAnswer": "Basketball"
+    "difficulty": "mittel",
+    "answers": ["Basketball", "American Football", "Eishockey", "Baseball"],
+    "correctAnswer": "Eishockey"
   },
   {
     "id": "3",
+    "text": "Welcher Schweizer Tennisspieler gewann insgesamt 20 Grand-Slam-Einzeltitel?",
+    "category": "Sport",
+    "difficulty": "leicht",
+    "answers": ["Stan Wawrinka", "Roger Federer", "Marc Rosset", "Heinz Günthardt"],
+    "correctAnswer": "Roger Federer"
+  },
+  {
+    "id": "4",
     "text": "Alle wie viele Jahre finden die Olympischen Sommerspiele statt?",
     "category": "Sport",
     "difficulty": "leicht",
@@ -24,28 +32,20 @@
     "correctAnswer": "4"
   },
   {
-    "id": "4",
-    "text": "Welches Land gewann die Fussball-Weltmeisterschaft 2018?",
-    "category": "Sport",
-    "difficulty": "mittel",
-    "answers": ["Deutschland", "Frankreich", "Brasilien", "Argentinien"],
-    "correctAnswer": "Frankreich"
-  },
-  {
     "id": "5",
-    "text": "Wie lang ist ein Marathon ungefähr (in Kilometern)?",
+    "text": "Wo fanden die Olympischen Sommerspiele 2016 statt?",
     "category": "Sport",
     "difficulty": "mittel",
-    "answers": ["21", "42", "50", "100"],
-    "correctAnswer": "42"
+    "answers": ["London", "Peking", "Rio de Janeiro", "Tokio"],
+    "correctAnswer": "Rio de Janeiro"
   },
   {
     "id": "6",
-    "text": "In welcher Sportart wurde Roger Federer bekannt?",
+    "text": "Wie viele Punkte braucht eine Mannschaft mindestens, um einen regulären Satz im Volleyball (Sätze 1 bis 4) zu gewinnen?",
     "category": "Sport",
-    "difficulty": "leicht",
-    "answers": ["Tennis", "Golf", "Ski", "Schwimmen"],
-    "correctAnswer": "Tennis"
+    "difficulty": "schwer",
+    "answers": ["15", "21", "25", "30"],
+    "correctAnswer": "25"
   },
   {
     "id": "7",
@@ -57,201 +57,211 @@
   },
   {
     "id": "8",
-    "text": "Welche Karte bedeutet im Fussball einen Platzverweis?",
+    "text": "In welchem Sport gibt es einen Slam Dunk?",
     "category": "Sport",
     "difficulty": "leicht",
-    "answers": ["Gelb", "Rot", "Blau", "Grün"],
-    "correctAnswer": "Rot"
+    "answers": ["Basketball", "Volleyball", "Tennis", "Handball"],
+    "correctAnswer": "Basketball"
   },
   {
     "id": "9",
-    "text": "Welches Gas atmen Menschen zum Leben ein?",
-    "category": "Wissenschaft",
+    "text": "Was bedeutet die Abkürzung HTTP?",
+    "category": "Technologie",
     "difficulty": "leicht",
-    "answers": ["Stickstoff", "Sauerstoff", "Kohlendioxid", "Helium"],
-    "correctAnswer": "Sauerstoff"
+    "answers": [
+      "HyperText Transfer Protocol",
+      "HyperText Transmission Protocol",
+      "HyperText Transfer Program",
+      "HyperText Transmission Program"
+    ],
+    "correctAnswer": "HyperText Transfer Protocol"
   },
   {
     "id": "10",
-    "text": "Welcher Planet ist der grösste in unserem Sonnensystem?",
-    "category": "Wissenschaft",
+    "text": "Wer gründete zusammen mit Paul Allen das Unternehmen Microsoft?",
+    "category": "Technologie",
     "difficulty": "leicht",
-    "answers": ["Saturn", "Jupiter", "Erde", "Mars"],
-    "correctAnswer": "Jupiter"
+    "answers": ["Steve Jobs", "Bill Gates", "Steve Ballmer", "Larry Ellison"],
+    "correctAnswer": "Bill Gates"
   },
   {
     "id": "11",
-    "text": "Wie viele Knochen hat ein erwachsener Mensch ungefähr?",
-    "category": "Wissenschaft",
+    "text": "In welchem Jahr stellte Apple das erste iPhone der Öffentlichkeit vor?",
+    "category": "Technologie",
     "difficulty": "mittel",
-    "answers": ["106", "206", "306", "406"],
-    "correctAnswer": "206"
+    "answers": ["2005", "2006", "2007", "2008"],
+    "correctAnswer": "2007"
   },
   {
     "id": "12",
-    "text": "Welches chemische Element hat das Symbol O?",
-    "category": "Wissenschaft",
-    "difficulty": "leicht",
-    "answers": ["Gold", "Sauerstoff", "Osmium", "Wasserstoff"],
-    "correctAnswer": "Sauerstoff"
+    "text": "Welche Programmiersprache wurde von Guido van Rossum entwickelt?",
+    "category": "Technologie",
+    "difficulty": "schwer",
+    "answers": ["Ruby", "Perl", "Python", "PHP"],
+    "correctAnswer": "Python"
   },
   {
     "id": "13",
-    "text": "Wie schnell ist das Licht ungefähr (in km/s)?",
-    "category": "Wissenschaft",
-    "difficulty": "schwer",
-    "answers": ["3000", "30000", "300000", "3000000"],
-    "correctAnswer": "300000"
+    "text": "Wofür steht die Abkürzung GPU im Computerbereich?",
+    "category": "Technologie",
+    "difficulty": "leicht",
+    "answers": [
+      "General Processing Unit",
+      "Graphics Processing Unit",
+      "Graphical Power Unit",
+      "Global Processing Utility"
+    ],
+    "correctAnswer": "Graphics Processing Unit"
   },
   {
     "id": "14",
-    "text": "Welches Organ pumpt das Blut durch den Körper?",
-    "category": "Wissenschaft",
-    "difficulty": "leicht",
-    "answers": ["Lunge", "Herz", "Leber", "Niere"],
-    "correctAnswer": "Herz"
-  },
-  {
-    "id": "15",
-    "text": "Was misst man mit einem Thermometer?",
-    "category": "Wissenschaft",
-    "difficulty": "leicht",
-    "answers": ["Druck", "Temperatur", "Gewicht", "Länge"],
-    "correctAnswer": "Temperatur"
-  },
-  {
-    "id": "16",
-    "text": "Welcher Wissenschaftler stellte die Relativitätstheorie auf?",
-    "category": "Wissenschaft",
-    "difficulty": "mittel",
-    "answers": ["Newton", "Einstein", "Darwin", "Tesla"],
-    "correctAnswer": "Einstein"
-  },
-  {
-    "id": "17",
-    "text": "Was ist die Hauptstadt der Schweiz?",
-    "category": "Geografie",
-    "difficulty": "leicht",
-    "answers": ["Zürich", "Bern", "Genf", "Basel"],
-    "correctAnswer": "Bern"
-  },
-  {
-    "id": "18",
-    "text": "Welcher gilt als der längste Fluss der Welt?",
-    "category": "Geografie",
-    "difficulty": "mittel",
-    "answers": ["Nil", "Amazonas", "Donau", "Rhein"],
-    "correctAnswer": "Nil"
-  },
-  {
-    "id": "19",
-    "text": "Auf welchem Kontinent liegt Ägypten?",
-    "category": "Geografie",
-    "difficulty": "leicht",
-    "answers": ["Asien", "Afrika", "Europa", "Australien"],
-    "correctAnswer": "Afrika"
-  },
-  {
-    "id": "20",
-    "text": "Welcher Ozean ist der grösste der Welt?",
-    "category": "Geografie",
-    "difficulty": "mittel",
-    "answers": ["Atlantik", "Pazifik", "Indischer Ozean", "Arktischer Ozean"],
-    "correctAnswer": "Pazifik"
-  },
-  {
-    "id": "21",
-    "text": "Wie heisst die Hauptstadt von Frankreich?",
-    "category": "Geografie",
-    "difficulty": "leicht",
-    "answers": ["Lyon", "Paris", "Marseille", "Nizza"],
-    "correctAnswer": "Paris"
-  },
-  {
-    "id": "22",
-    "text": "Welches ist das höchste Gebirge der Welt?",
-    "category": "Geografie",
-    "difficulty": "mittel",
-    "answers": ["Alpen", "Anden", "Himalaya", "Rocky Mountains"],
-    "correctAnswer": "Himalaya"
-  },
-  {
-    "id": "23",
-    "text": "In welchem Land steht der Eiffelturm?",
-    "category": "Geografie",
-    "difficulty": "leicht",
-    "answers": ["Italien", "Frankreich", "Spanien", "Belgien"],
-    "correctAnswer": "Frankreich"
-  },
-  {
-    "id": "24",
     "text": "Welche Sprache wird primär für Spring Boot verwendet?",
-    "category": "Programmierung",
+    "category": "Technologie",
     "difficulty": "leicht",
     "answers": ["Python", "Java", "Ruby", "PHP"],
     "correctAnswer": "Java"
   },
   {
-    "id": "25",
-    "text": "Wofür steht die Abkürzung HTML?",
-    "category": "Programmierung",
-    "difficulty": "mittel",
-    "answers": [
-      "HyperText Markup Language",
-      "High Text Machine Language",
-      "Hyperlink Text Mode Language",
-      "Home Tool Markup Language"
-    ],
-    "correctAnswer": "HyperText Markup Language"
-  },
-  {
-    "id": "26",
-    "text": "Welches Zeichen leitet in Java einen einzeiligen Kommentar ein?",
-    "category": "Programmierung",
-    "difficulty": "leicht",
-    "answers": ["#", "//", "/*", "--"],
-    "correctAnswer": "//"
-  },
-  {
-    "id": "27",
-    "text": "Was ist Git?",
-    "category": "Programmierung",
-    "difficulty": "mittel",
-    "answers": [
-      "Eine Programmiersprache",
-      "Ein Versionsverwaltungssystem",
-      "Eine Datenbank",
-      "Ein Betriebssystem"
-    ],
-    "correctAnswer": "Ein Versionsverwaltungssystem"
-  },
-  {
-    "id": "28",
-    "text": "Welcher Datentyp speichert in Java einen Wahrheitswert (true/false)?",
-    "category": "Programmierung",
-    "difficulty": "leicht",
-    "answers": ["int", "String", "boolean", "double"],
-    "correctAnswer": "boolean"
-  },
-  {
-    "id": "29",
-    "text": "Wofür steht die Abkürzung API?",
-    "category": "Programmierung",
-    "difficulty": "mittel",
-    "answers": [
-      "Application Programming Interface",
-      "Advanced Program Integration",
-      "Automatic Process Information",
-      "Applied Protocol Index"
-    ],
-    "correctAnswer": "Application Programming Interface"
-  },
-  {
-    "id": "30",
+    "id": "15",
     "text": "Welche HTTP-Methode wird typischerweise zum Erstellen einer Ressource verwendet?",
-    "category": "Programmierung",
+    "category": "Technologie",
     "difficulty": "mittel",
     "answers": ["GET", "POST", "DELETE", "HEAD"],
     "correctAnswer": "POST"
+  },
+  {
+    "id": "16",
+    "text": "Wie heisst die Hauptstadt von Australien?",
+    "category": "Geographie",
+    "difficulty": "leicht",
+    "answers": ["Sydney", "Melbourne", "Canberra", "Perth"],
+    "correctAnswer": "Canberra"
+  },
+  {
+    "id": "17",
+    "text": "Welcher Fluss ist der längste in Europa?",
+    "category": "Geographie",
+    "difficulty": "mittel",
+    "answers": ["Donau", "Rhein", "Wolga", "Dnepr"],
+    "correctAnswer": "Wolga"
+  },
+  {
+    "id": "18",
+    "text": "Welcher ist der tiefste See der Erde?",
+    "category": "Geographie",
+    "difficulty": "mittel",
+    "answers": ["Kaspisches Meer", "Tanganjikasee", "Baikalsee", "Lake Superior"],
+    "correctAnswer": "Baikalsee"
+  },
+  {
+    "id": "19",
+    "text": "In welchem Land liegt die Atacama-Wüste?",
+    "category": "Geographie",
+    "difficulty": "mittel",
+    "answers": ["Peru", "Chile", "Argentinien", "Bolivien"],
+    "correctAnswer": "Chile"
+  },
+  {
+    "id": "20",
+    "text": "Was ist die Hauptstadt der Schweiz?",
+    "category": "Geographie",
+    "difficulty": "leicht",
+    "answers": ["Zürich", "Bern", "Genf", "Basel"],
+    "correctAnswer": "Bern"
+  },
+  {
+    "id": "21",
+    "text": "Welcher Ozean ist der grösste der Welt?",
+    "category": "Geographie",
+    "difficulty": "mittel",
+    "answers": ["Atlantik", "Pazifik", "Indischer Ozean", "Arktischer Ozean"],
+    "correctAnswer": "Pazifik"
+  },
+  {
+    "id": "22",
+    "text": "Was ist die Hauptstadt von Spanien?",
+    "category": "Geographie",
+    "difficulty": "leicht",
+    "answers": ["Rom", "Bern", "Madrid", "Paris"],
+    "correctAnswer": "Madrid"
+  },
+  {
+    "id": "23",
+    "text": "Welches ist das höchste Gebirge der Welt?",
+    "category": "Geographie",
+    "difficulty": "mittel",
+    "answers": ["Alpen", "Anden", "Himalaya", "Rocky Mountains"],
+    "correctAnswer": "Himalaya"
+  },
+  {
+    "id": "24",
+    "text": "In welchem Jahr fiel die Berliner Mauer?",
+    "category": "Geschichte",
+    "difficulty": "leicht",
+    "answers": ["1987", "1989", "1990", "1991"],
+    "correctAnswer": "1989"
+  },
+  {
+    "id": "25",
+    "text": "In welchem Jahr wurde die Schweizerische Eidgenossenschaft gegründet?",
+    "category": "Geschichte",
+    "difficulty": "mittel",
+    "answers": ["1291", "1315", "1351", "1499"],
+    "correctAnswer": "1291"
+  },
+  {
+    "id": "26",
+    "text": "Wer war der erste Bundeskanzler der Bundesrepublik Deutschland?",
+    "category": "Geschichte",
+    "difficulty": "mittel",
+    "answers": [
+      "Willy Brandt",
+      "Ludwig Erhard",
+      "Konrad Adenauer",
+      "Kurt Georg Kiesinger"
+    ],
+    "correctAnswer": "Konrad Adenauer"
+  },
+  {
+    "id": "27",
+    "text": "Welches Reich endete 1453 mit der Eroberung Konstantinopels?",
+    "category": "Geschichte",
+    "difficulty": "schwer",
+    "answers": [
+      "Heiliges Römisches Reich",
+      "Byzantinisches Reich",
+      "Persisches Reich",
+      "Mongolisches Reich"
+    ],
+    "correctAnswer": "Byzantinisches Reich"
+  },
+  {
+    "id": "28",
+    "text": "In welchem Jahr begann der Dreissigjährige Krieg?",
+    "category": "Geschichte",
+    "difficulty": "mittel",
+    "answers": ["1608", "1618", "1625", "1648"],
+    "correctAnswer": "1618"
+  },
+  {
+    "id": "29",
+    "text": "Wer verfasste das politische Werk 'Der Fürst' (Il Principe)?",
+    "category": "Geschichte",
+    "difficulty": "schwer",
+    "answers": [
+      "Thomas Hobbes",
+      "Dante Alighieri",
+      "Niccolo Machiavelli",
+      "Erasmus von Rotterdam"
+    ],
+    "correctAnswer": "Niccolo Machiavelli"
+  },
+  {
+    "id": "30",
+    "text": "In welchem Jahr endete der Zweite Weltkrieg in Europa?",
+    "category": "Geschichte",
+    "difficulty": "leicht",
+    "answers": ["1943", "1944", "1945", "1946"],
+    "correctAnswer": "1945"
   }
 ]
