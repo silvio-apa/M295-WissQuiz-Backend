@@ -22,11 +22,25 @@ public class QuestionService {
         return questionRepository.findAll();
     }
 
+    /**
+     * Liefert eine einzelne Frage anhand ihrer ID, oder null,
+     * wenn es sie nicht gibt.
+     * @param id die ID der gesuchten Frage
+     * @return die gefundene {@link Question}
+     * @throws QuestionNotFoundException wenn keine Frage mit dieser ID
+     * existiert
+     */
     public Question getQuestionById(String id) {
         return questionRepository.findById(id)
                 .orElseThrow(() -> new QuestionNotFoundException(id));
     }
 
+    /**
+     * Erstellt eine neue Frage aus den übergebenen Formulardaten.
+     * Die ID wird serverseitig generiert.
+     * @param form die validierten Eingabedaten der neuen Frage
+     * @return die gespeicherte {@link Question} inklusive generierter ID
+     */
     public Question createQuestion(QuestionFormDTO form) {
         String id = UUID.randomUUID().toString();
         Question question = QuestionMapper.toEntity(id, form);
