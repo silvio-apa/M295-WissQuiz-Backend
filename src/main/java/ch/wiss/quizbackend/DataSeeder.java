@@ -4,93 +4,42 @@ import ch.wiss.quizbackend.model.Question;
 import ch.wiss.quizbackend.repository.QuestionRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+import org.springframework.core.io.ClassPathResource;
+import tools.jackson.core.type.TypeReference;
+import tools.jackson.databind.ObjectMapper;
 
+import java.io.InputStream;
 import java.util.List;
 
 @Component
 public class DataSeeder implements CommandLineRunner {
+
     private final QuestionRepository questionRepository;
+    private final ObjectMapper objectMapper;
 
-    public DataSeeder( QuestionRepository questionRepository) {
+
+    public DataSeeder(QuestionRepository questionRepository,  ObjectMapper objectMapper) {
         this.questionRepository = questionRepository;
-
+        this.objectMapper = objectMapper;
     }
 
     @Override
-    public void run(String... args) {
+    public void run(String... args) throws Exception {
         if (questionRepository.count() == 0) {
-            questionRepository.saveAll(getStartQuestions());
-            System.out.println("DataSeeder: " + questionRepository.count() + "Fragen in die DB geschrieben. ");
+            // wir greifen auf die question.json Datei zu
+            ClassPathResource resource = new ClassPathResource("questions.json");
 
-        }else {
-            System.out.println("DataSeeder: DB enthält bereits Daten, kein Seeding nötig. ");
+            try (InputStream inputStream = resource.getInputStream()) {
+                // wir lesen die Werte aus dem InputStream und wandeln sie in eine Liste vom Typ Question um
+                List<Question> questions = objectMapper.readValue(inputStream, new TypeReference<List<Question>>()
+                {});
+                // wir speichern nun die Liste der Question die wir aus der Json-Datei gelesen haben
+                questionRepository.saveAll(questions);
+                System.out.println("DataSeeder: " + questionRepository.count() + " Fragen in die DB geschrieben.");
+            }
 
+        } else {
+            System.out.println("DataSeeder: DB enthält bereits Daten, kein Seeding nötig.");
         }
-    }
-
-
-    private List<Question> getStartQuestions() {
-
-        return List.of(
-
-                new Question(
-                        "1",
-                        "Was ist die Hauptstadt von Kanada?",
-                        "Geografie",
-                        "mittel",
-                        List.of("Toronto", "Ottawa", "Vancouver", "Montreal"),
-                        "Ottawa"
-                ),
-
-                new Question(
-                        "2",
-                        "Welches Tier ist das schnellste Landtier?",
-                        "Natur",
-                        "leicht",
-                        List.of("Löwe", "Gepard", "Pferd", "Leopard"),
-                        "Gepard"
-                ),
-
-                new Question(
-                        "3",
-                        "Wie lautet die Binärzahl für die Dezimalzahl 10?",
-                        "Informatik",
-                        "mittel",
-                        List.of("1001", "1010", "1100", "1110"),
-                        "1010"
-                ),
-
-                new Question(
-                        "4",
-                        "Wer erfand den modernen Buchdruck mit beweglichen Metalllettern in Europa?",
-                        "Geschichte",
-                        "schwer",
-                        List.of(
-                                "Isaac Newton",
-                                "Johannes Gutenberg",
-                                "Galileo Galilei",
-                                "Leonardo da Vinci"
-                        ),
-                        "Johannes Gutenberg"
-                ),
-
-                new Question(
-                        "5",
-                        "Wie viel sind 15 Prozent von 200?",
-                        "Mathematik",
-                        "leicht",
-                        List.of("20", "25", "30", "35"),
-                        "30"
-                ),
-
-                new Question(
-                        "6",
-                        "Welcher Planet hat die kürzeste Umlaufzeit um die Sonne?",
-                        "Astronomie",
-                        "schwer",
-                        List.of("Venus", "Mars", "Merkur", "Jupiter"),
-                        "Merkur"
-                )
-        );
     }
 }

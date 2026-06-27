@@ -1,0 +1,257 @@
+[
+  {
+    "id": "1",
+    "text": "Wie viele Spieler stehen beim Fussball pro Team auf dem Feld?",
+    "category": "Sport",
+    "difficulty": "leicht",
+    "answers": ["9", "10", "11", "12"],
+    "correctAnswer": "11"
+  },
+  {
+    "id": "2",
+    "text": "In welchem Sport gibt es einen Slam Dunk?",
+    "category": "Sport",
+    "difficulty": "leicht",
+    "answers": ["Basketball", "Volleyball", "Tennis", "Handball"],
+    "correctAnswer": "Basketball"
+  },
+  {
+    "id": "3",
+    "text": "Alle wie viele Jahre finden die Olympischen Sommerspiele statt?",
+    "category": "Sport",
+    "difficulty": "leicht",
+    "answers": ["2", "3", "4", "5"],
+    "correctAnswer": "4"
+  },
+  {
+    "id": "4",
+    "text": "Welches Land gewann die Fussball-Weltmeisterschaft 2018?",
+    "category": "Sport",
+    "difficulty": "mittel",
+    "answers": ["Deutschland", "Frankreich", "Brasilien", "Argentinien"],
+    "correctAnswer": "Frankreich"
+  },
+  {
+    "id": "5",
+    "text": "Wie lang ist ein Marathon ungefähr (in Kilometern)?",
+    "category": "Sport",
+    "difficulty": "mittel",
+    "answers": ["21", "42", "50", "100"],
+    "correctAnswer": "42"
+  },
+  {
+    "id": "6",
+    "text": "In welcher Sportart wurde Roger Federer bekannt?",
+    "category": "Sport",
+    "difficulty": "leicht",
+    "answers": ["Tennis", "Golf", "Ski", "Schwimmen"],
+    "correctAnswer": "Tennis"
+  },
+  {
+    "id": "7",
+    "text": "Wie viele Ringe hat das olympische Symbol?",
+    "category": "Sport",
+    "difficulty": "leicht",
+    "answers": ["3", "4", "5", "6"],
+    "correctAnswer": "5"
+  },
+  {
+    "id": "8",
+    "text": "Welche Karte bedeutet im Fussball einen Platzverweis?",
+    "category": "Sport",
+    "difficulty": "leicht",
+    "answers": ["Gelb", "Rot", "Blau", "Grün"],
+    "correctAnswer": "Rot"
+  },
+  {
+    "id": "9",
+    "text": "Welches Gas atmen Menschen zum Leben ein?",
+    "category": "Wissenschaft",
+    "difficulty": "leicht",
+    "answers": ["Stickstoff", "Sauerstoff", "Kohlendioxid", "Helium"],
+    "correctAnswer": "Sauerstoff"
+  },
+  {
+    "id": "10",
+    "text": "Welcher Planet ist der grösste in unserem Sonnensystem?",
+    "category": "Wissenschaft",
+    "difficulty": "leicht",
+    "answers": ["Saturn", "Jupiter", "Erde", "Mars"],
+    "correctAnswer": "Jupiter"
+  },
+  {
+    "id": "11",
+    "text": "Wie viele Knochen hat ein erwachsener Mensch ungefähr?",
+    "category": "Wissenschaft",
+    "difficulty": "mittel",
+    "answers": ["106", "206", "306", "406"],
+    "correctAnswer": "206"
+  },
+  {
+    "id": "12",
+    "text": "Welches chemische Element hat das Symbol O?",
+    "category": "Wissenschaft",
+    "difficulty": "leicht",
+    "answers": ["Gold", "Sauerstoff", "Osmium", "Wasserstoff"],
+    "correctAnswer": "Sauerstoff"
+  },
+  {
+    "id": "13",
+    "text": "Wie schnell ist das Licht ungefähr (in km/s)?",
+    "category": "Wissenschaft",
+    "difficulty": "schwer",
+    "answers": ["3000", "30000", "300000", "3000000"],
+    "correctAnswer": "300000"
+  },
+  {
+    "id": "14",
+    "text": "Welches Organ pumpt das Blut durch den Körper?",
+    "category": "Wissenschaft",
+    "difficulty": "leicht",
+    "answers": ["Lunge", "Herz", "Leber", "Niere"],
+    "correctAnswer": "Herz"
+  },
+  {
+    "id": "15",
+    "text": "Was misst man mit einem Thermometer?",
+    "category": "Wissenschaft",
+    "difficulty": "leicht",
+    "answers": ["Druck", "Temperatur", "Gewicht", "Länge"],
+    "correctAnswer": "Temperatur"
+  },
+  {
+    "id": "16",
+    "text": "Welcher Wissenschaftler stellte die Relativitätstheorie auf?",
+    "category": "Wissenschaft",
+    "difficulty": "mittel",
+    "answers": ["Newton", "Einstein", "Darwin", "Tesla"],
+    "correctAnswer": "Einstein"
+  },
+  {
+    "id": "17",
+    "text": "Was ist die Hauptstadt der Schweiz?",
+    "category": "Geografie",
+    "difficulty": "leicht",
+    "answers": ["Zürich", "Bern", "Genf", "Basel"],
+    "correctAnswer": "Bern"
+  },
+  {
+    "id": "18",
+    "text": "Welcher gilt als der längste Fluss der Welt?",
+    "category": "Geografie",
+    "difficulty": "mittel",
+    "answers": ["Nil", "Amazonas", "Donau", "Rhein"],
+    "correctAnswer": "Nil"
+  },
+  {
+    "id": "19",
+    "text": "Auf welchem Kontinent liegt Ägypten?",
+    "category": "Geografie",
+    "difficulty": "leicht",
+    "answers": ["Asien", "Afrika", "Europa", "Australien"],
+    "correctAnswer": "Afrika"
+  },
+  {
+    "id": "20",
+    "text": "Welcher Ozean ist der grösste der Welt?",
+    "category": "Geografie",
+    "difficulty": "mittel",
+    "answers": ["Atlantik", "Pazifik", "Indischer Ozean", "Arktischer Ozean"],
+    "correctAnswer": "Pazifik"
+  },
+  {
+    "id": "21",
+    "text": "Wie heisst die Hauptstadt von Frankreich?",
+    "category": "Geografie",
+    "difficulty": "leicht",
+    "answers": ["Lyon", "Paris", "Marseille", "Nizza"],
+    "correctAnswer": "Paris"
+  },
+  {
+    "id": "22",
+    "text": "Welches ist das höchste Gebirge der Welt?",
+    "category": "Geografie",
+    "difficulty": "mittel",
+    "answers": ["Alpen", "Anden", "Himalaya", "Rocky Mountains"],
+    "correctAnswer": "Himalaya"
+  },
+  {
+    "id": "23",
+    "text": "In welchem Land steht der Eiffelturm?",
+    "category": "Geografie",
+    "difficulty": "leicht",
+    "answers": ["Italien", "Frankreich", "Spanien", "Belgien"],
+    "correctAnswer": "Frankreich"
+  },
+  {
+    "id": "24",
+    "text": "Welche Sprache wird primär für Spring Boot verwendet?",
+    "category": "Programmierung",
+    "difficulty": "leicht",
+    "answers": ["Python", "Java", "Ruby", "PHP"],
+    "correctAnswer": "Java"
+  },
+  {
+    "id": "25",
+    "text": "Wofür steht die Abkürzung HTML?",
+    "category": "Programmierung",
+    "difficulty": "mittel",
+    "answers": [
+      "HyperText Markup Language",
+      "High Text Machine Language",
+      "Hyperlink Text Mode Language",
+      "Home Tool Markup Language"
+    ],
+    "correctAnswer": "HyperText Markup Language"
+  },
+  {
+    "id": "26",
+    "text": "Welches Zeichen leitet in Java einen einzeiligen Kommentar ein?",
+    "category": "Programmierung",
+    "difficulty": "leicht",
+    "answers": ["#", "//", "/*", "--"],
+    "correctAnswer": "//"
+  },
+  {
+    "id": "27",
+    "text": "Was ist Git?",
+    "category": "Programmierung",
+    "difficulty": "mittel",
+    "answers": [
+      "Eine Programmiersprache",
+      "Ein Versionsverwaltungssystem",
+      "Eine Datenbank",
+      "Ein Betriebssystem"
+    ],
+    "correctAnswer": "Ein Versionsverwaltungssystem"
+  },
+  {
+    "id": "28",
+    "text": "Welcher Datentyp speichert in Java einen Wahrheitswert (true/false)?",
+    "category": "Programmierung",
+    "difficulty": "leicht",
+    "answers": ["int", "String", "boolean", "double"],
+    "correctAnswer": "boolean"
+  },
+  {
+    "id": "29",
+    "text": "Wofür steht die Abkürzung API?",
+    "category": "Programmierung",
+    "difficulty": "mittel",
+    "answers": [
+      "Application Programming Interface",
+      "Advanced Program Integration",
+      "Automatic Process Information",
+      "Applied Protocol Index"
+    ],
+    "correctAnswer": "Application Programming Interface"
+  },
+  {
+    "id": "30",
+    "text": "Welche HTTP-Methode wird typischerweise zum Erstellen einer Ressource verwendet?",
+    "category": "Programmierung",
+    "difficulty": "mittel",
+    "answers": ["GET", "POST", "DELETE", "HEAD"],
+    "correctAnswer": "POST"
+  }
+]

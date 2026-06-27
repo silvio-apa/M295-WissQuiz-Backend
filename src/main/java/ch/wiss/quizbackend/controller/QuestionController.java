@@ -34,10 +34,7 @@ public class QuestionController {
     }
 
     @PutMapping("/api/questions/{id}")
-    public Question updateQuestion(
-            @PathVariable String id,
-            @RequestBody QuestionFormDTO form
-    ) {
+    public Question updateQuestion(@PathVariable String id, @RequestBody QuestionFormDTO form) {
         return questionService.updateQuestion(id, form);
     }
 
@@ -45,5 +42,23 @@ public class QuestionController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteQuestion(@PathVariable String id) {
         questionService.deleteQuestion(id);
+    }
+
+    @GetMapping("/api/questions/category/{category}")
+    public List<Question> getQuestionsByCategory(@PathVariable String category) {
+        return questionService.getQuestionByCategory(category);
+    }
+
+    @GetMapping("/api/questions/difficulty/{difficulty}")
+    public List<Question> getQuestionsByDifficulty(@PathVariable String difficulty) {
+        return questionService.getQuestionsByDifficulty(difficulty);
+    }
+
+    @GetMapping("/api/questions/random")
+    public List<Question> getRandomQuestions(
+            @RequestParam(required = false) String category,
+            @RequestParam(required = false) String difficulty,
+            @RequestParam(defaultValue = "10") int count) {
+        return questionService.getRandomQuestions(category, difficulty, count);
     }
 }

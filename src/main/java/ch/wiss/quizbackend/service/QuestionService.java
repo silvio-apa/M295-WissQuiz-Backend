@@ -1,13 +1,12 @@
 package ch.wiss.quizbackend.service;
 
-import  ch.wiss.quizbackend.model.Question;
-import  ch.wiss.quizbackend.repository.QuestionRepository;
-import  org.springframework.stereotype.Service;
 import ch.wiss.quizbackend.dto.QuestionFormDTO;
 import ch.wiss.quizbackend.mapper.QuestionMapper;
-import java.util.UUID;
+import ch.wiss.quizbackend.model.Question;
+import ch.wiss.quizbackend.repository.QuestionRepository;
+import org.springframework.stereotype.Service;
 
-import java.util.List;
+import java.util.*;
 
 @Service
 public class QuestionService {
@@ -41,4 +40,29 @@ public class QuestionService {
         questionRepository.deleteById(id);
     }
 
+    public List<Question> getQuestionByCategory(String category) {
+        return questionRepository.findByCategory(category);
+    }
+
+    public List<Question> getQuestionsByDifficulty(String difficulty) {
+        return questionRepository.findByDifficulty(difficulty);
+    }
+
+    public List<Question> getRandomQuestions(String category, String difficulty, int count) {
+        List<Question> pool;
+
+        if (category != null && difficulty != null) {
+            pool = questionRepository.findByCategoryAndDifficulty(category, difficulty);
+        } else if (category != null) {
+            pool = questionRepository.findByCategory(category);
+        } else if (difficulty != null) {
+            pool = questionRepository.findByDifficulty(difficulty);
+        } else {
+            pool = questionRepository.findAll();
+        }
+
+        List<Question> shuffledPool = new ArrayList<>(pool);
+        Collections.shuffle(shuffledPool);
+        return shuffledPool.stream().limit(count).toList();
+    }
 }
